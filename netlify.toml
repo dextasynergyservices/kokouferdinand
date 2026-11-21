@@ -1,0 +1,8 @@
+[build]
+  command = "bun run build"
+
+[build.environment]
+  # Public client-side URLs/sitekeys are intentionally inlined by Next.js into browser bundles.
+  # All private secrets (DATABASE_URL, BETTER_AUTH_SECRET, R2_*, TURNSTILE_SECRET_KEY) remain strictly scanned.
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_R2_PUBLIC_URL,NEXT_PUBLIC_SITE_URL,NEXT_PUBLIC_TURNSTILE_SITE_KEY"
+  SECRETS_SCAN_OMIT_PATHS = ".env.example"
