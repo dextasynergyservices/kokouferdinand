@@ -1,0 +1,32 @@
+{
+  "title": "Works",
+  "subtitle": "Sculptural archive, installations, and material studies.",
+  "filters": {
+    "all": "All",
+    "series": "Series",
+    "year": "Year",
+    "medium": "Medium",
+    "reset": "Reset"
+  },
+  "detail": {
+    "year": "Year",
+    "medium": "Medium",
+    "dimensions": "Dimensions",
+    "series": "Series",
+    "provenance": "Provenance",
+    "availability": "Availability",
+    "installationViews": "Installation Views",
+    "relatedWorks": "Related Works",
+    "explore3d": "Explore in 3D",
+    "viewPhotography": "Photography",
+    "deepZoom": "Deep Zoom",
+    "enquireWork": "Enquire About This Work"
+  },
+  "availability": {
+    "available": "Available",
+    "sold": "Sold",
+    "private_collection": "Private Collection",
+    "on_request": "On Request"
+  },
+  "empty": "No works match the selected filters."
+}

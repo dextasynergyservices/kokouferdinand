@@ -1,0 +1,32 @@
+{
+  "title": "Obras",
+  "subtitle": "Archivo escultórico, instalaciones y estudios materiales.",
+  "filters": {
+    "all": "Todo",
+    "series": "Serie",
+    "year": "Año",
+    "medium": "Técnica",
+    "reset": "Restablecer"
+  },
+  "detail": {
+    "year": "Año",
+    "medium": "Técnica",
+    "dimensions": "Dimensiones",
+    "series": "Serie",
+    "provenance": "Procedencia",
+    "availability": "Disponibilidad",
+    "installationViews": "Vistas de instalación",
+    "relatedWorks": "Obras relacionadas",
+    "explore3d": "Explorar en 3D",
+    "viewPhotography": "Fotografías",
+    "deepZoom": "Zoom de alta resolución",
+    "enquireWork": "Consultar sobre esta obra"
+  },
+  "availability": {
+    "available": "Disponible",
+    "sold": "Vendida",
+    "private_collection": "Colección privada",
+    "on_request": "Bajo consulta"
+  },
+  "empty": "Ninguna obra coincide con los filtros seleccionados."
+}

@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "works": "Works",
+    "exhibitions": "Exhibitions",
+    "about": "About",
+    "videos": "Videos",
+    "press": "Press",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "footer": {
+    "representedBy": "Represented by Galerie Sator",
+    "studio": "Studio — Paris / Lomé",
+    "rights": "All rights reserved."
+  },
+  "actions": {
+    "viewAll": "View all",
+    "readMore": "Read more",
+    "back": "Back",
+    "downloadPdf": "Download PDF",
+    "enquire": "Enquire",
+    "loadMore": "Load more"
+  },
+  "locale": {
+    "label": "Language"
+  }
+}

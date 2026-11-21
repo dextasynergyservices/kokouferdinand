@@ -1,0 +1,12 @@
+{
+  "title": "Exposiciones y Ferias",
+  "current": "Actual",
+  "types": {
+    "all": "Todas",
+    "solo": "Exposiciones individuales",
+    "group": "Exposiciones colectivas",
+    "biennale": "Bienales",
+    "fair": "Ferias de arte"
+  },
+  "empty": "No hay exposiciones publicadas por el momento."
+}

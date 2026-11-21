@@ -1,0 +1,12 @@
+{
+  "title": "Expositions & Foires",
+  "current": "En cours",
+  "types": {
+    "all": "Toutes",
+    "solo": "Expositions personnelles",
+    "group": "Expositions collectives",
+    "biennale": "Biennales",
+    "fair": "Foires d'art"
+  },
+  "empty": "Aucune exposition publiée pour le moment."
+}

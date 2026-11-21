@@ -1,0 +1,12 @@
+{
+  "title": "Exhibitions & Fairs",
+  "current": "Current",
+  "types": {
+    "all": "All",
+    "solo": "Solo Exhibitions",
+    "group": "Group Exhibitions",
+    "biennale": "Biennales",
+    "fair": "Art Fairs"
+  },
+  "empty": "No exhibitions published yet."
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Contacto y Consultas",
+  "form": {
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "submit": "Enviar consulta",
+    "submitting": "Enviando…",
+    "success": "Su mensaje ha sido enviado. Responderemos a la mayor brevedad.",
+    "error": "Se ha producido un error. Revise el formulario e inténtelo de nuevo.",
+    "captchaRequired": "Complete la verificación de seguridad."
+  },
+  "drawer": {
+    "title": "Consulta sobre la obra",
+    "regarding": "En referencia a"
+  }
+}

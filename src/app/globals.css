@@ -1,0 +1,326 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Relevo & Vinco inspired raw-board surfaces */
+  --color-board-50: #f6f3ee;
+  --color-board-100: #f2efe9;
+  --color-board-200: #e6e0d5;
+  --color-board-300: #d8d0c3;
+
+  /* Indian ink & charcoal typography */
+  --color-ink-950: #141311;
+  --color-ink-800: #2c2925;
+  --color-ink-600: #5a5248;
+  --color-ink-400: #8a8175;
+
+  /* Oxidized iron / raw earth accent */
+  --color-oxide: #7a4b32;
+
+  /* Typography */
+  --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  --font-heading: var(--font-sans);
+
+  /* shadcn/ui semantic tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: #f2efe9;
+  --foreground: #141311;
+  --card: #f6f3ee;
+  --card-foreground: #141311;
+  --popover: #f6f3ee;
+  --popover-foreground: #141311;
+  --primary: #141311;
+  --primary-foreground: #f6f3ee;
+  --secondary: #e6e0d5;
+  --secondary-foreground: #141311;
+  --muted: #e6e0d5;
+  --muted-foreground: #5a5248;
+  --accent: #e6e0d5;
+  --accent-foreground: #141311;
+  --destructive: #8f2d21;
+  --border: #d8d0c3;
+  --input: #d8d0c3;
+  --ring: #7a4b32;
+  --chart-1: #7a4b32;
+  --chart-2: #5a5248;
+  --chart-3: #2c2925;
+  --chart-4: #8a8175;
+  --chart-5: #141311;
+  --radius: 0.125rem;
+  --sidebar: #ece7de;
+  --sidebar-foreground: #141311;
+  --sidebar-primary: #141311;
+  --sidebar-primary-foreground: #f6f3ee;
+  --sidebar-accent: #e6e0d5;
+  --sidebar-accent-foreground: #141311;
+  --sidebar-border: #d8d0c3;
+  --sidebar-ring: #7a4b32;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* Relevo & Vinco physical relief tokens (top-left studio light, Makouvia warm stone palette) */
+:root {
+  --relief-light: rgba(255, 252, 245, 0.9);
+  --relief-shade: rgba(20, 19, 17, 0.22);
+  --relief-deep: rgba(20, 19, 17, 0.38);
+
+  --shadow-relief-raised:
+    -1px -1px 0 var(--relief-light),
+    1px 1px 0 rgba(20, 19, 17, 0.14),
+    4px 7px 14px rgba(20, 19, 17, 0.1),
+    12px 18px 34px rgba(20, 19, 17, 0.12);
+
+  --shadow-relief-slab:
+    -1px -1px 0 rgba(255, 252, 245, 0.92),
+    1px 1px 0 rgba(20, 19, 17, 0.16),
+    5px 8px 18px rgba(20, 19, 17, 0.14),
+    14px 20px 38px rgba(20, 19, 17, 0.14);
+
+  --shadow-relief-well:
+    inset 4px 6px 12px rgba(20, 19, 17, 0.2),
+    inset 1px 1px 2px rgba(20, 19, 17, 0.16),
+    inset -1px -1px 0 var(--relief-light);
+
+  --shadow-cavity-dark:
+    inset 0 18px 36px rgba(0, 0, 0, 0.62),
+    inset 0 -8px 20px rgba(0, 0, 0, 0.45),
+    inset 1px 1px 0 rgba(0, 0, 0, 0.72),
+    inset -1px -1px 0 rgba(242, 239, 233, 0.12);
+
+  --shadow-relief-btn:
+    -1px -1px 0 var(--relief-light),
+    1px 1px 0 rgba(20, 19, 17, 0.16),
+    3px 5px 10px rgba(20, 19, 17, 0.14),
+    7px 10px 22px rgba(20, 19, 17, 0.1);
+
+  --shadow-relief-btn-pressed:
+    inset 2px 3px 6px rgba(20, 19, 17, 0.22), inset -1px -1px 0 var(--relief-light);
+
+  --shadow-relief-nav: 0 1px 0 var(--relief-light), 0 10px 26px -12px rgba(20, 19, 17, 0.18);
+}
+
+@layer components {
+  /* Organic raw-board dual-octave fiber texture (Relevo & Vinco tactile surface) */
+  .paper-grain {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .20 0 0 0 0 .15 0 0 0 0 .10 0 0 0 .12 -.02'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+      radial-gradient(circle at 20% 18%, rgba(255, 252, 245, 0.45), transparent 55%),
+      radial-gradient(circle at 85% 82%, rgba(20, 19, 17, 0.045), transparent 60%);
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size:
+      260px 260px,
+      100% 100%,
+      100% 100%;
+  }
+
+  .relief-raised {
+    box-shadow: var(--shadow-relief-raised);
+  }
+
+  .relief-slab {
+    border-radius: 6px;
+    border: 1px solid rgba(20, 19, 17, 0.12);
+    background-color: #faf8f4;
+    box-shadow: var(--shadow-relief-slab);
+  }
+
+  .relief-well {
+    box-shadow: var(--shadow-relief-well);
+  }
+
+  .relief-nav {
+    box-shadow: var(--shadow-relief-nav);
+  }
+
+  /* Deep dark die-cut cavity (Relevo & Vinco recessed charcoal window with warm-stone grain) */
+  .cavity-dark {
+    background-color: #141311;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .92 0 0 0 0 .89 0 0 0 0 .84 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+      radial-gradient(ellipse at 50% 0%, rgba(122, 75, 50, 0.14), transparent 68%);
+    box-shadow: var(--shadow-cavity-dark);
+  }
+
+  /* Tactile raised warm-board button (Relevo & Vinco die-cut keycap) */
+  .relief-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid rgba(20, 19, 17, 0.14);
+    background-color: #faf8f4;
+    color: #141311;
+    box-shadow: var(--shadow-relief-btn);
+    transition:
+      transform 160ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 160ms cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 160ms ease,
+      color 160ms ease,
+      border-color 160ms ease;
+  }
+
+  .relief-btn:hover {
+    transform: translateY(-1px);
+    border-color: rgba(122, 75, 50, 0.45);
+    color: #7a4b32;
+  }
+
+  .relief-btn:active {
+    transform: translateY(1px);
+    box-shadow: var(--shadow-relief-btn-pressed);
+  }
+
+  /* Dashed editorial link (Relevo & Vinco signature underline) */
+  .link-dashed {
+    border-bottom: 1px dashed currentColor;
+    padding-bottom: 2px;
+    transition:
+      color 150ms ease,
+      border-color 150ms ease,
+      opacity 150ms ease;
+  }
+
+  .link-dashed:hover {
+    border-bottom-style: solid;
+  }
+
+  /* Dashed specification divider */
+  .spec-rule {
+    border-bottom: 1px dashed rgba(20, 19, 17, 0.22);
+  }
+
+  /* Raised warm-board typography emerging inside a dark cavity */
+  .relief-raised-text {
+    color: #f2efe9;
+    text-shadow:
+      -1px -1px 0 rgba(255, 252, 245, 0.22),
+      2px 3px 0 rgba(0, 0, 0, 0.65),
+      6px 10px 22px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Pressed/debossed monumental typography (cut into raw board) */
+  .debossed-heading {
+    text-shadow:
+      1px 1px 0 rgba(255, 252, 245, 0.85),
+      -1px -1px 0 rgba(20, 19, 17, 0.12);
+  }
+
+  /* Raised/embossed board typography (emerging from surface) */
+  .embossed-heading {
+    text-shadow:
+      -1px -1px 0 rgba(255, 252, 245, 0.85),
+      1px 2px 0 rgba(20, 19, 17, 0.16),
+      4px 7px 12px rgba(20, 19, 17, 0.12);
+  }
+
+  /* Tactile folded crease divider */
+  .crease-rule {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(20, 19, 17, 0.2) 10%,
+      rgba(20, 19, 17, 0.2) 90%,
+      transparent 100%
+    );
+    box-shadow: 0 1px 0 rgba(255, 252, 245, 0.8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    /* biome-ignore lint/complexity/noImportantStyles: Must override smooth scroll behavior when reduced motion is preferred. */
+    scroll-behavior: auto !important;
+  }
+}

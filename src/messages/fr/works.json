@@ -1,0 +1,32 @@
+{
+  "title": "Œuvres",
+  "subtitle": "Archives sculpturales, installations et travaux sur matière.",
+  "filters": {
+    "all": "Tout",
+    "series": "Série",
+    "year": "Année",
+    "medium": "Médium",
+    "reset": "Réinitialiser"
+  },
+  "detail": {
+    "year": "Année",
+    "medium": "Technique",
+    "dimensions": "Dimensions",
+    "series": "Série",
+    "provenance": "Provenance",
+    "availability": "Disponibilité",
+    "installationViews": "Vues d'installation",
+    "relatedWorks": "Œuvres associées",
+    "explore3d": "Explorer en 3D",
+    "viewPhotography": "Photographies",
+    "deepZoom": "Zoom haute définition",
+    "enquireWork": "Demander des informations sur cette œuvre"
+  },
+  "availability": {
+    "available": "Disponible",
+    "sold": "Vendue",
+    "private_collection": "Collection privée",
+    "on_request": "Sur demande"
+  },
+  "empty": "Aucune œuvre ne correspond à ces critères."
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Contact & Demandes",
+  "form": {
+    "name": "Nom complet",
+    "email": "Adresse e-mail",
+    "subject": "Objet",
+    "message": "Message",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours…",
+    "success": "Votre message a bien été transmis. Nous vous répondrons dans les plus brefs délais.",
+    "error": "Une erreur est survenue. Veuillez vérifier le formulaire et réessayer.",
+    "captchaRequired": "Veuillez valider la vérification anti-bot."
+  },
+  "drawer": {
+    "title": "Demande d'information",
+    "regarding": "Concernant l'œuvre"
+  }
+}
